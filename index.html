@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lorenzo Cona | AI & Automation Specialist • Integration Engineer</title>
+  <meta name="description" content="Portfolio of Lorenzo Cona — AI & Automation Specialist and Integration Engineer certified in n8n and Make.com. Specialized in LLM agents, event-driven workflows, and API architectures.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              50: '#eef2ff',
+              100: '#e0e7ff',
+              400: '#818cf8',
+              500: '#6366f1',
+              600: '#4f46e5',
+              700: '#4338ca',
+            },
+            accent: '#38bdf8',
+            darkBg: '#090d16',
+            cardBg: '#111827',
+            borderDark: '#1f2937'
+          },
+          fontFamily: {
+            display: ['Syne', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+            mono: ['JetBrains Mono', 'monospace'],
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    h1, h2, h3, h4, .font-display { font-family: 'Syne', sans-serif; }
+    .hero-glow {
+      background: radial-gradient(circle at 50% -20%, rgba(99, 102, 241, 0.25) 0%, rgba(56, 189, 248, 0.1) 40%, transparent 75%);
+    }
+    .card-hover {
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px -10px rgba(79, 70, 229, 0.25);
+      border-color: #6366f1;
+    }
+    @keyframes pulse-subtle {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+    .pulse-dot { animation: pulse-subtle 2s infinite ease-in-out; }
+  </style>
+</head>
+<body class="bg-gray-50 text-gray-900 dark:bg-darkBg dark:text-gray-100 font-body antialiased selection:bg-brand-500 selection:text-white transition-colors duration-200">
+
+  <!-- NAVBAR -->
+  <nav class="fixed top-0 left-0 right-0 z-50 bg-white/80 dark:bg-darkBg/80 backdrop-blur-md border-b border-gray-200 dark:border-borderDark transition-colors">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2">
+        <span class="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-600 to-accent flex items-center justify-center text-white font-display font-bold text-sm shadow-md shadow-brand-500/20">LC</span>
+        <span class="font-display font-bold text-lg tracking-tight">Lorenzo Cona</span>
+      </a>
+      <div class="hidden md:flex items-center gap-7 text-sm font-medium text-gray-600 dark:text-gray-300">
+        <a href="#projects" class="hover:text-brand-500 transition-colors">Production Systems</a>
+        <a href="#stack" class="hover:text-brand-500 transition-colors">Tech Stack</a>
+        <a href="#certifications" class="hover:text-brand-500 transition-colors">Certifications</a>
+        <a href="#about" class="hover:text-brand-500 transition-colors">About</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <a href="https://github.com/automatizayourbusiness" target="_blank" rel="noopener noreferrer" class="px-3.5 py-1.5 rounded-lg border border-gray-300 dark:border-borderDark hover:border-brand-500 text-xs font-mono font-semibold flex items-center gap-1.5 transition-colors">
+          <svg class="w-4 h-4 fill-current" viewBox="0 0 24 24"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
+          GitHub
+        </a>
+        <a href="mailto:lorenzocona14@gmail.com" class="px-3.5 py-1.5 rounded-lg bg-brand-600 hover:bg-brand-500 text-white text-xs font-semibold shadow-md shadow-brand-600/30 transition-colors">
+          Contact Me
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="pt-32 pb-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto hero-glow flex flex-col items-center text-center">
+    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-brand-500/10 border border-brand-500/20 text-brand-600 dark:text-brand-400 text-xs font-medium mb-6">
+      <span class="w-2 h-2 rounded-full bg-emerald-500 pulse-dot"></span>
+      Available for Remote Roles Worldwide • Mendoza, Argentina (GMT-3 • Full US Hours Overlap)
+    </div>
+
+    <h1 class="text-4xl sm:text-6xl lg:text-7xl font-display font-extrabold tracking-tight mb-5 leading-tight">
+      AI & Automation Specialist <br>
+      <span class="bg-gradient-to-r from-brand-600 via-brand-400 to-accent bg-clip-text text-transparent">Integration Engineer</span>
+    </h1>
+
+    <p class="text-base sm:text-lg text-gray-600 dark:text-gray-300 max-w-2xl mb-8 leading-relaxed">
+      Certified in <strong>n8n (Full Program Completion)</strong> & <strong>Make.com (AI Agent Builder)</strong> with solid <strong>Python & JavaScript</strong> backend engineering. I build resilient, self-healing event-driven pipelines, autonomous LLM agents with Tool Calling, and enterprise webhook architectures.
+    </p>
+
+    <!-- CTAs -->
+    <div class="flex flex-wrap items-center justify-center gap-3 mb-14">
+      <a href="#projects" class="px-6 py-3 rounded-lg bg-brand-600 hover:bg-brand-500 text-white font-semibold text-sm shadow-lg shadow-brand-600/25 transition-all">
+        View Production Repositories (6)
+      </a>
+      <a href="#certifications" class="px-6 py-3 rounded-lg bg-white dark:bg-cardBg border border-gray-300 dark:border-borderDark hover:border-brand-500 text-gray-900 dark:text-white font-semibold text-sm transition-all">
+        Verified Certifications
+      </a>
+    </div>
+
+    <!-- METRICS -->
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4 w-full max-w-4xl pt-8 border-t border-gray-200 dark:border-borderDark">
+      <div class="p-4 rounded-xl bg-white dark:bg-cardBg/60 border border-gray-200 dark:border-borderDark">
+        <p class="text-3xl font-display font-extrabold text-brand-500 mb-1">-40%</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Customer No-Shows (Booking Bot)</p>
+      </div>
+      <div class="p-4 rounded-xl bg-white dark:bg-cardBg/60 border border-gray-200 dark:border-borderDark">
+        <p class="text-3xl font-display font-extrabold text-accent mb-1">64%</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Autonomous Support Resolution</p>
+      </div>
+      <div class="p-4 rounded-xl bg-white dark:bg-cardBg/60 border border-gray-200 dark:border-borderDark">
+        <p class="text-3xl font-display font-extrabold text-emerald-500 mb-1">&lt; 45s</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">Speed-to-Lead Response Time</p>
+      </div>
+      <div class="p-4 rounded-xl bg-white dark:bg-cardBg/60 border border-gray-200 dark:border-borderDark">
+        <p class="text-3xl font-display font-extrabold text-purple-400 mb-1">0.0%</p>
+        <p class="text-xs text-gray-500 dark:text-gray-400 font-medium">AI Pricing/Math Hallucinations</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTION REPOSITORIES -->
+  <section id="projects" class="py-20 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+    <div class="mb-12">
+      <div class="flex items-center gap-2 text-brand-500 text-xs font-mono font-bold uppercase tracking-wider mb-2">
+        <span>● Verified GitHub Repositories</span>
+      </div>
+      <h2 class="text-3xl sm:text-4xl font-display font-bold text-gray-900 dark:text-white">Live Production Architectures</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-2 max-w-xl">Every project below is deployed, backed by public open-source code, and solving quantifiable business bottlenecks.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+      <!-- Proy 1: Atencia Garage WhatsApp -->
+      <div class="card-hover p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded bg-brand-500/10 text-brand-500 font-mono text-xs font-bold">n8n • OpenAI API</span>
+            <span class="text-xs font-mono text-emerald-500 font-bold">-40% No-Shows</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">Atencia Garage Booking Bot</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Autonomous WhatsApp bot handling appointment scheduling, modifications, and cancellations using OpenAI Tool Calling against Google Calendar API. Anti-spam humanized typing cadence.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-mono text-gray-500 dark:text-gray-400">
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Function Calling</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">WhatsApp Cloud</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Calendar API</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-100 dark:border-borderDark flex items-center justify-between">
+          <a href="https://github.com/automatizayourbusiness/atencia-garage-whatsapp-booking-bot" target="_blank" class="text-sm font-semibold text-brand-500 hover:text-brand-400 flex items-center gap-1">
+            Inspect Code & Repo →
+          </a>
+        </div>
+      </div>
+
+      <!-- Proy 2: Make Support Agent -->
+      <div class="card-hover p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded bg-accent/10 text-accent font-mono text-xs font-bold">Make.com • Slack</span>
+            <span class="text-xs font-mono text-emerald-500 font-bold">$2,200/mo Saved</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">Autonomous Support Agent</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Omnichannel customer triage agent on Make.com with real-time intent classification. Resolves Tier-1 inquiries autonomously; auto-escalates critical tickets to Slack with AI contextual summaries.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-mono text-gray-500 dark:text-gray-400">
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">64% Auto-Resolution</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Intent Analysis</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Slack Triage</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-100 dark:border-borderDark flex items-center justify-between">
+          <a href="https://github.com/automatizayourbusiness/make-ai-support-agent" target="_blank" class="text-sm font-semibold text-brand-500 hover:text-brand-400 flex items-center gap-1">
+            Inspect Code & Repo →
+          </a>
+        </div>
+      </div>
+
+      <!-- Proy 3: Mates Aconcagua -->
+      <div class="card-hover p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded bg-purple-500/10 text-purple-400 font-mono text-xs font-bold">LangChain • SQL</span>
+            <span class="text-xs font-mono text-emerald-500 font-bold">+28% Conversions</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">AI E-Commerce Assistant</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Conversational catalog bot querying PostgreSQL/SQL databases via LangChain tools in n8n. Delivers live product links and strictly prevents inventory or pricing hallucinations.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-mono text-gray-500 dark:text-gray-400">
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">SQL Dynamic LIKE</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">URL Injection</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Zero-Hallucination</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-100 dark:border-borderDark flex items-center justify-between">
+          <a href="https://github.com/automatizayourbusiness/mates-aconcagua-ecommerce-ai-chatbot" target="_blank" class="text-sm font-semibold text-brand-500 hover:text-brand-400 flex items-center gap-1">
+            Inspect Code & Repo →
+          </a>
+          <a href="https://matesaconcagua.vercel.app/" target="_blank" class="text-xs font-mono text-gray-400 hover:text-white">Live Store ↗</a>
+        </div>
+      </div>
+
+      <!-- Proy 4: Enterprise Lead Scoring -->
+      <div class="card-hover p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded bg-emerald-500/10 text-emerald-500 font-mono text-xs font-bold">n8n • Webhooks</span>
+            <span class="text-xs font-mono text-emerald-500 font-bold">8.5h ➔ 45s Speed</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">AI Lead Scoring & CRM</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            High-throughput webhook ingestion pipeline parsing payloads through JavaScript regex and executing predictive scoring using JSON Schema structured schemas (GPT-4o-mini).
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-mono text-gray-500 dark:text-gray-400">
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">JSON Schema</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Slack Realtime</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Exponential Backoff</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-100 dark:border-borderDark flex items-center justify-between">
+          <a href="https://github.com/automatizayourbusiness/n8n-ai-lead-scoring-pipeline" target="_blank" class="text-sm font-semibold text-brand-500 hover:text-brand-400 flex items-center gap-1">
+            Inspect Code & Repo →
+          </a>
+        </div>
+      </div>
+
+      <!-- Proy 5: Python Invoice Reconciler -->
+      <div class="card-hover p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded bg-yellow-500/10 text-yellow-500 font-mono text-xs font-bold">Python 3 • GPT-4o</span>
+            <span class="text-xs font-mono text-emerald-500 font-bold">0.0% Error Rate</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">AI Invoice Reconciler</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Backend Python automation extracting fiscal metadata from invoices via LLMs, auditing mathematical consistency (subtotals, VAT), and dispatching clean JSON to ERP webhooks.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-mono text-gray-500 dark:text-gray-400">
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">1.2s per doc</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Tax Audit</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">ERP Webhook</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-100 dark:border-borderDark flex items-center justify-between">
+          <a href="https://github.com/automatizayourbusiness/python-ai-invoice-reconciler" target="_blank" class="text-sm font-semibold text-brand-500 hover:text-brand-400 flex items-center gap-1">
+            Inspect Code & Repo →
+          </a>
+        </div>
+      </div>
+
+      <!-- Proy 6: Atencia Garage Scraper -->
+      <div class="card-hover p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <div class="flex items-center justify-between gap-2 mb-3">
+            <span class="px-2.5 py-1 rounded bg-sky-500/10 text-sky-400 font-mono text-xs font-bold">Apify • n8n • Regex</span>
+            <span class="text-xs font-mono text-emerald-500 font-bold">120+ Leads/Day</span>
+          </div>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mb-2">B2B Maps Scraper & Outreach</h3>
+          <p class="text-sm text-gray-600 dark:text-gray-300 mb-4 leading-relaxed">
+            Automated prospect extraction pipeline scraping Google Maps records, sanitizing Argentine & international phone formats (+549), and dispatching personalized WhatsApp copy.
+          </p>
+          <div class="flex flex-wrap gap-1.5 mb-6 text-[11px] font-mono text-gray-500 dark:text-gray-400">
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">96% Delivery</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Dynamic Copywriting</span>
+            <span class="px-2 py-0.5 rounded bg-gray-100 dark:bg-darkBg border border-gray-200 dark:border-borderDark">Anti-Ban Windows</span>
+          </div>
+        </div>
+        <div class="pt-4 border-t border-gray-100 dark:border-borderDark flex items-center justify-between">
+          <a href="https://github.com/automatizayourbusiness/atencia-garage-lead-scraper-outreach" target="_blank" class="text-sm font-semibold text-brand-500 hover:text-brand-400 flex items-center gap-1">
+            Inspect Code & Repo →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section id="stack" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-gray-200 dark:border-borderDark">
+    <div class="mb-10 text-center">
+      <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white">Technical Architecture & Stack</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Tools and protocols I build with daily to guarantee resilient, scalable automations.</p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="p-5 rounded-xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark">
+        <div class="w-10 h-10 rounded-lg bg-brand-500/10 text-brand-500 flex items-center justify-center font-bold font-mono mb-4 text-sm">iPaaS</div>
+        <h3 class="font-bold text-base mb-2">Workflow Orchestration</h3>
+        <ul class="text-xs space-y-1.5 text-gray-600 dark:text-gray-300 font-mono">
+          <li>• n8n (Self-hosted & Cloud)</li>
+          <li>• Make.com (Integromat)</li>
+          <li>• Zapier Enterprise</li>
+          <li>• REST Webhook Ingestion</li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark">
+        <div class="w-10 h-10 rounded-lg bg-accent/10 text-accent flex items-center justify-center font-bold font-mono mb-4 text-sm">LLM</div>
+        <h3 class="font-bold text-base mb-2">Applied AI & Agents</h3>
+        <ul class="text-xs space-y-1.5 text-gray-600 dark:text-gray-300 font-mono">
+          <li>• OpenAI API (GPT-4o)</li>
+          <li>• Function / Tool Calling</li>
+          <li>• JSON Schema Structured Outputs</li>
+          <li>• LangChain Multi-Tool Agents</li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark">
+        <div class="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-500 flex items-center justify-center font-bold font-mono mb-4 text-sm">DEV</div>
+        <h3 class="font-bold text-base mb-2">Backend & Databases</h3>
+        <ul class="text-xs space-y-1.5 text-gray-600 dark:text-gray-300 font-mono">
+          <li>• Python 3 (Requests, Pydantic)</li>
+          <li>• JavaScript (Node.js ES6+)</li>
+          <li>• PostgreSQL & Supabase</li>
+          <li>• SQL (Relational Schema)</li>
+        </ul>
+      </div>
+
+      <div class="p-5 rounded-xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark">
+        <div class="w-10 h-10 rounded-lg bg-purple-500/10 text-purple-400 flex items-center justify-center font-bold font-mono mb-4 text-sm">ENG</div>
+        <h3 class="font-bold text-base mb-2">Resilience & Security</h3>
+        <ul class="text-xs space-y-1.5 text-gray-600 dark:text-gray-300 font-mono">
+          <li>• Idempotency Controls</li>
+          <li>• Exponential Backoff Retries</li>
+          <li>• Dead Letter Queues (DLQ)</li>
+          <li>• HMAC-SHA256 Signatures</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-gray-200 dark:border-borderDark">
+    <div class="mb-10 text-center">
+      <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white">Official Certifications & Education</h2>
+      <p class="text-sm text-gray-500 dark:text-gray-400 mt-2">Verified credentials backing up technical expertise.</p>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+      <div class="p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono text-brand-500 font-bold uppercase">n8n Academy</span>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mt-1 mb-2">Professional Certificate in n8n Program Completion</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 font-mono mb-4">Credential ID: a70c7088fe1b49da8545cdb74a88f970 • Oct 2026</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">
+            Comprehensive mastery of n8n architecture, including Foundations (101), Intermediate Integrations (102), and AI in Practice (103).
+          </p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono text-accent font-bold uppercase">Make.com Academy</span>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mt-1 mb-2">AI Agent Builder Certification</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 font-mono mb-4">Make.com Official Credential • Oct 2026</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">
+            Advanced certification in designing multi-step agentic workflows, autonomous triage scenarios, and enterprise SaaS integration.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono text-emerald-500 font-bold uppercase">Formal Academic Track</span>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mt-1 mb-2">B.S. in Computer Science & Software Development</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 font-mono mb-4">Universidad del Aconcagua (UDA) — 2nd Year (2025 – Present)</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">
+            Core studies in Systems Architecture, Algorithms & Data Structures, Object-Oriented Programming, and Networks & Communications.
+          </p>
+        </div>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-white dark:bg-cardBg border border-gray-200 dark:border-borderDark flex flex-col justify-between">
+        <div>
+          <span class="text-xs font-mono text-yellow-500 font-bold uppercase">Programming & AI</span>
+          <h3 class="font-display font-bold text-xl text-gray-900 dark:text-white mt-1 mb-2">Python & Applied AI Foundations</h3>
+          <p class="text-xs text-gray-500 dark:text-gray-400 font-mono mb-4">Santander Open Academy / DeepLearning.AI</p>
+          <p class="text-sm text-gray-600 dark:text-gray-300">
+            Python backend programming, data manipulation, algorithm design, and foundation models implementation.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT / FOOTER -->
+  <footer id="about" class="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto border-t border-gray-200 dark:border-borderDark text-center">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-display font-bold text-gray-900 dark:text-white mb-3">Let's Connect</h2>
+      <p class="text-sm text-gray-600 dark:text-gray-400 mb-8">
+        Looking for an AI Automation Specialist or Integration Engineer who can take systems from concept to production? Reach out directly:
+      </p>
+      <div class="flex flex-wrap items-center justify-center gap-4 text-sm font-mono font-medium">
+        <a href="mailto:lorenzocona14@gmail.com" class="px-5 py-2.5 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-colors flex items-center gap-2">
+          📧 lorenzocona14@gmail.com
+        </a>
+        <a href="https://github.com/automatizayourbusiness" target="_blank" class="px-5 py-2.5 rounded-xl border border-gray-300 dark:border-borderDark hover:border-brand-500 transition-colors flex items-center gap-2">
+          🐙 GitHub: automatizayourbusiness
+        </a>
+      </div>
+      <p class="text-xs text-gray-400 dark:text-gray-500 font-mono mt-10">
+        © 2026 Lorenzo Cona • Mendoza, Argentina • Built for Global Remote Opportunities
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
